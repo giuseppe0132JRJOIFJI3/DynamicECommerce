@@ -1,0 +1,83 @@
+
+<div class="wrapper d-flex align-items-stretch">
+  <nav id="sidebar">
+    <div class="custom-menu">
+      <button type="button" id="sidebarCollapse" class="btn btn-primary">
+        <i class="fa fa-bars"></i>
+        <span class="sr-only">Toggle Menu</span>
+      </button>
+    </div>
+    <div class="p-4 pt-5">
+      <h1><a  class="logo">Shop by category</a></h1>
+      <ul class="list-unstyled components mb-5">
+        <li>
+          <!-- mostrare tutti i prodotti -->
+          <a routerLink="/catalog" type="button" class="category">View all products</a>
+        </li>
+        <li *ngFor="let category of categories">
+          <!-- mostrare solo i prodotti in base alla categoria cliccata -->
+          <a class="category" type="button" (click)="onGetProductsByCategoriesID(category.productCategoriesID)" routerLink="/catalog/categoryID/:{{category?.productCategoriesID}}" class="category" type="button">{{category.field2}}</a>
+
+        </li>
+      </ul>
+    </div>
+  </nav>
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <section class="py-5">
+          <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+              <div *ngFor="let product of getDisplayedProducts(); index as i">
+
+                <div class="col mb-5">
+                        <div class="card h-100"
+                          routerLink="/catalog/productID/{{product.productID}}">
+                        <!-- Product image-->
+                        <!-- chiamate ai metodi del service di configuarzione -->
+                        <img *ngIf="configurationService.isVisible(nameComponent,'ImageValue')" class="card-img-top" src="data:image/png;base64,{{product.image}}" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder" *ngIf="configurationService.isVisible(nameComponent,'field1')">{{product.field1}}</h5>
+                                <!-- Product price-->
+                              <a *ngIf="configurationService.isVisible(nameComponent,'UnitPrice')"><a>{{configurationService.getText(nameComponent, 'UnitPrice')}} </a>{{product.unitPrice| currency: 'EUR' }}</a>
+                              <a *ngIf="configurationService.isVisible(nameComponent,'Field2')">{{product.field2}}</a>
+                              <a *ngIf="configurationService.isVisible(nameComponent,'Field4')">{{product.field4}}</a>
+                              <a *ngIf="configurationService.isVisible(nameComponent,'Field5')">{{product.field5}}</a>
+                        </div>
+                  <!-- Product actions-->
+                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                          <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                            routerLink="/catalog/productID/{{product.productID}}">View details</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- bottoni per la paginazione -->
+        <nav aria-label="Product navigation">
+          <ul class="pagination justify-content-center">
+            <li class="page-item" [class.disabled]="currentPage === 1">
+              <a class="page-link" (click)="currentPage = 1">First</a>
+            </li>
+            <li class="page-item" [class.disabled]="currentPage === 1">
+              <a class="page-link" (click)="currentPage = currentPage - 1">Previous</a>
+            </li>
+            <li class="page-item" *ngFor="let page of pages" [class.active]="currentPage === page">
+              <a class="page-link" (click)="currentPage = page">{{ page }}</a>
+            </li>
+            <li class="page-item" [class.disabled]="currentPage === totalPages">
+              <a class="page-link" (click)="currentPage = currentPage + 1">Next</a>
+            </li>
+            <li class="page-item" [class.disabled]="currentPage === totalPages">
+              <a class="page-link" (click)="currentPage = totalPages">Last</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+		</div>

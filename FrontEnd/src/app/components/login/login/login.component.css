@@ -1,0 +1,40 @@
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgb(140, 165, 215), rgb(112, 105, 151))
+  }
+
+  .my-custom-color {
+    background-color: #1d0e48;
+    border-color: #1d0e48;
+    color: white;
+  }
+
+  :root {
+    --primary-color: #1d0e48;
+  }
+
+  .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #1d0e48;
+  }
+
+  .error-message {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    animation: fade-in 0.5s;
+    border-radius: 10px;
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }

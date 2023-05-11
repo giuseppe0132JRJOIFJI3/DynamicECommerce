@@ -1,0 +1,324 @@
+{
+"Pages": [
+    {
+      "Name": "CatalogComponent",
+      "Fields": [
+        {
+          "Name": "ImageValue",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "UnitPrice",
+          "IsVisible": true,
+          "Text": "Price"
+        },
+        {
+          "Name": "Field1",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field2",
+          "IsVisible": false,
+          "Text": ""
+        },
+        {
+          "Name": "Image",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field4",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field5",
+          "IsVisible": true,
+          "Text": ""
+        }
+      ]
+    },
+	    {
+      "Name": "ProductDetailsComponent",
+      "Fields": [
+        {
+          "Name": "ImageValue",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "UnitPrice",
+          "IsVisible": true,
+          "Text": "Price"
+        },
+        {
+          "Name": "Field1",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field2",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Image",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field4",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field5",
+          "IsVisible": true,
+          "Text": ""
+        }
+      ]
+    },
+	    {
+      "Name": "ChekoutComponent",
+      "Fields": [
+        {
+          "Name": "ImageValue",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "UnitPrice",
+          "IsVisible": true,
+          "Text": "Price"
+        },
+        {
+          "Name": "Field1",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field2",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Image",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field4",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field5",
+          "IsVisible": true,
+          "Text": ""
+        }
+      ]
+    },
+	      {
+      "Name": "SignInComponent",
+      "Fields": [
+        {
+          "Name": "Name",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Surname",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Username",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Password",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field1",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field2",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field3",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field4",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field5",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field6",
+          "IsVisible": true,
+          "Text": ""
+        }
+      ]
+    },
+	    {
+      "Name": "AddProductComponent",
+      "Fields": [
+        {
+          "Name": "UnitPrice",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field1",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field2",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Image",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field4",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field5",
+          "IsVisible": true,
+          "Text": ""
+        }
+      ]
+    },
+	    {
+      "Name": "AddCategoryComponent",
+      "Fields": [
+        {
+          "Name": "Field1",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field2",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field3",
+          "IsVisible": false,
+          "Text": ""
+        }
+      ]
+    },
+	    {
+      "Name": "CustomerComponent",
+      "Fields": [
+        {
+          "Name": "Name",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Surname",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Username",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Password",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field1",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field2",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field3",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field4",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field5",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field6",
+          "IsVisible": true,
+          "Text": ""
+        }
+      ]
+    },
+	    {
+      "Name": "HomeComponent",
+      "Fields": [
+        {
+          "Name": "UnitPrice",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field1",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field2",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Image",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field4",
+          "IsVisible": true,
+          "Text": ""
+        },
+        {
+          "Name": "Field5",
+          "IsVisible": true,
+          "Text": ""
+        }
+      ]
+    }
+  ]
+}

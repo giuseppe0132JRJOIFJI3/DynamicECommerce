@@ -1,0 +1,12 @@
+C:\Users\admin\source\repos\DECommerce\DECommerceBE\ConfigurationJson\bin\Debug\net6.0\DECommerceConfigurationsModels.deps.json
+C:\Users\admin\source\repos\DECommerce\DECommerceBE\ConfigurationJson\bin\Debug\net6.0\DECommerceConfigurationsModels.dll
+C:\Users\admin\source\repos\DECommerce\DECommerceBE\ConfigurationJson\bin\Debug\net6.0\DECommerceConfigurationsModels.pdb
+C:\Users\admin\source\repos\DECommerce\DECommerceBE\ConfigurationJson\obj\Debug\net6.0\DECommerceConfigurationsModels.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\DECommerce\DECommerceBE\ConfigurationJson\obj\Debug\net6.0\DECommerceConfigurationsModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\DECommerce\DECommerceBE\ConfigurationJson\obj\Debug\net6.0\DECommerceConfigurationsModels.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\DECommerce\DECommerceBE\ConfigurationJson\obj\Debug\net6.0\DECommerceConfigurationsModels.AssemblyInfo.cs
+C:\Users\admin\source\repos\DECommerce\DECommerceBE\ConfigurationJson\obj\Debug\net6.0\DECommerceConfigurationsModels.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\DECommerce\DECommerceBE\ConfigurationJson\obj\Debug\net6.0\DECommerceConfigurationsModels.dll
+C:\Users\admin\source\repos\DECommerce\DECommerceBE\ConfigurationJson\obj\Debug\net6.0\refint\DECommerceConfigurationsModels.dll
+C:\Users\admin\source\repos\DECommerce\DECommerceBE\ConfigurationJson\obj\Debug\net6.0\DECommerceConfigurationsModels.pdb
+C:\Users\admin\source\repos\DECommerce\DECommerceBE\ConfigurationJson\obj\Debug\net6.0\ref\DECommerceConfigurationsModels.dll

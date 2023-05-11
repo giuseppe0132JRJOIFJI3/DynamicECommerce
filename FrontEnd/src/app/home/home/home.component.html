@@ -1,0 +1,64 @@
+
+<body>
+  <!-- Header-->
+  <header class="bg-dark py-5">
+      <div class="container px-4 px-lg-5 my-5">
+          <div class="text-center text-white">
+              <h1 class="display-4 fw-bolder">Buy what you want, view our catalog:  </h1>
+              <button type="button" class="btn btn-primary btn-rounded"
+              routerLink="/catalog">View product catalog</button>
+          </div>
+      </div>
+  </header>
+  <!-- Section-->
+  <section class="py-5">
+      <div class="container px-4 px-lg-5 mt-5">
+          <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div *ngFor="let product of products; index as i">
+              <div class="col mb-5" *ngIf="i<4">
+                  <div class="card h-100">
+                      <!-- Product image-->
+                      <img class="card-img-top" src="data:image/png;base64,{{product.image}}" alt="..." />
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <!-- Product name-->
+                              <h5 class="fw-bolder">{{product.field1}}</h5>
+                              <!-- Product price-->
+                              {{product.unitPrice| currency: 'EUR' }}
+                          </div>
+                      </div>
+                      <!-- Product actions-->
+                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                          <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" routerLink="/catalog/productID/{{product.productID}}">View options</a></div>
+                      </div>
+                  </div>
+                </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section *ngFor="let category of categories; let i = index">
+    <div class="container px-5">
+      <div class="row gx-5 align-items-center">
+        <div class="col-lg-6 order-lg-{{i % 2 === 0 ? 2 : 1}}">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="data:image/png;base64,{{category.field1}}" alt="..." />
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-{{i % 2 === 0 ? 1 : 2}}">
+          <div class="p-5" style="flex-direction: row-reverse;">
+            <h2 class="display-4">{{category.field2}}</h2>
+            <p>{{category.field3}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<hr class="featurette-divider">
+</body>
+

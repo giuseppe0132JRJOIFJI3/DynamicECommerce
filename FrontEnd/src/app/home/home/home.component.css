@@ -1,0 +1,71 @@
+.card:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* adatta l'immagine alla grandezza del div  -----  object-fit: contain*/
+.card-img-top {
+  width: 260px;
+  height: 300px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+.card{
+  width: 268px;
+  height: 300px;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.carousel-item {
+  height: 50vh;
+}
+
+.footer-cta {
+box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+.price {
+color: #263238;
+font-size: 24px;
+}
+
+.card-title {
+color:#263238
+}
+
+.sale {
+color: #E53935
+}
+
+.sale-badge {
+background-color: #E53935
+}
+
+.featurette-divider{
+margin-top: 15px;
+}
+
+
+#containerCategory {
+  width: 450px;
+  height: 270px;
+}
+
+#containerCategory img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+.img-fluid{
+  width: 492px;
+  height: 492px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+

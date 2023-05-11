@@ -1,0 +1,18 @@
+/* .btn-outline-danger{
+  align-self:  flex-start;
+} */
+
+
+
+#center{
+  align-items: center
+
+}
+
+
+.bi-check-circle{
+  color: green;
+}
+.bi-x-circle:hover{
+  color: red;
+}

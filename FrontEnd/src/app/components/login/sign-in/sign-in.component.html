@@ -1,0 +1,117 @@
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-lg-9 col-xl-7">
+        <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+            <form [formGroup]="signUpForm">
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <input type="text" id="name" class="form-control form-control-lg" name="myControl"
+                    [(ngModel)]="customerModel.name"
+                    formControlName="name"
+                    />
+                    <label class="form-label" for="name">First Name</label>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <input type="text" id="surname" class="form-control form-control-lg" name="myControl"
+                    [(ngModel)]="customerModel.surname"
+                    formControlName="surname"/>
+                    <label class="form-label" for="surname">Surname</label>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 d-flex align-items-center">
+
+                  <div class="form-outline datepicker w-100">
+                    <input type="text" class="form-control form-control-lg" id="birthdate" name="myControl"
+                    type="date"
+                    [(ngModel)]="customerModel.field3"
+                    formControlName="birthdate"/>
+                    <label for="birthdate" class="form-label">birthdate</label>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <h6 class="mb-2 pb-1">Gender: </h6>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                      value="option1" checked />
+                    <label class="form-check-label" for="femaleGender">Female</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                      value="option2" />
+                    <label class="form-check-label" for="maleGender">Male</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                      value="option3" />
+                    <label class="form-check-label" for="otherGender">Other</label>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 pb-2">
+
+                  <div class="form-outline">
+                    <input type="username" id="username" class="form-control form-control-lg" name="myControl"
+                    [(ngModel)]="customerModel.username"
+                    formControlName="username"/>
+                    <label class="form-label" for="username">Username</label>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4 pb-2">
+
+                  <div class="form-outline">
+                    <input type="password" id="typePasswordX" class="form-control form-control-lg" name="myControl"
+                    [(ngModel)]="customerModel.password"
+                    formControlName="password"/>
+                    <label class="form-label" for="password">Password</label>
+                  </div>
+
+                </div>
+              </div>
+
+
+                <div class="col-md-6 mb-4 d-flex align-items-center">
+                  <div class="form-outline datepicker w-100">
+                    <input type="file" accept="image/*"  placeholder="Product image" id="image" class="form-control form-control-lg"
+                    [(ngModel)]=" customerModel.field2"
+                    [ngModelOptions]="{standalone: true}"
+                    (change)="onFileSelected($event)"/>
+                  </div>
+                </div>
+
+
+              <div class="mt-4 pt-2">
+                <input class="btn btn-primary btn-lg" type="submit" value="Submit"
+                [disabled]="signUpForm.invalid"
+                (click)="OnAddUser()"
+                routerLink="/home"/>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

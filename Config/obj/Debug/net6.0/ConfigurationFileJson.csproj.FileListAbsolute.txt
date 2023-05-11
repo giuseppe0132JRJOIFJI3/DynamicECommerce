@@ -1,0 +1,17 @@
+C:\Users\admin\source\repos\DECommerce\ConfigurationFileJson\obj\Debug\net6.0\ConfigurationFileJson.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\DECommerce\ConfigurationFileJson\obj\Debug\net6.0\ConfigurationFileJson.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\DECommerce\ConfigurationFileJson\obj\Debug\net6.0\ConfigurationFileJson.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\DECommerce\ConfigurationFileJson\obj\Debug\net6.0\ConfigurationFileJson.AssemblyInfo.cs
+C:\Users\admin\source\repos\DECommerce\ConfigurationFileJson\obj\Debug\net6.0\ConfigurationFileJson.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\DECommerce\ConfigurationFileJson\bin\Debug\net6.0\ConfigurationFileJson.exe
+C:\Users\admin\source\repos\DECommerce\ConfigurationFileJson\bin\Debug\net6.0\ConfigurationFileJson.deps.json
+C:\Users\admin\source\repos\DECommerce\ConfigurationFileJson\bin\Debug\net6.0\ConfigurationFileJson.runtimeconfig.json
+C:\Users\admin\source\repos\DECommerce\ConfigurationFileJson\bin\Debug\net6.0\ConfigurationFileJson.dll
+C:\Users\admin\source\repos\DECommerce\ConfigurationFileJson\bin\Debug\net6.0\ConfigurationFileJson.pdb
+C:\Users\admin\source\repos\DECommerce\ConfigurationFileJson\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\admin\source\repos\DECommerce\ConfigurationFileJson\obj\Debug\net6.0\ConfigurationFileJson.csproj.CopyComplete
+C:\Users\admin\source\repos\DECommerce\ConfigurationFileJson\obj\Debug\net6.0\ConfigurationFileJson.dll
+C:\Users\admin\source\repos\DECommerce\ConfigurationFileJson\obj\Debug\net6.0\refint\ConfigurationFileJson.dll
+C:\Users\admin\source\repos\DECommerce\ConfigurationFileJson\obj\Debug\net6.0\ConfigurationFileJson.pdb
+C:\Users\admin\source\repos\DECommerce\ConfigurationFileJson\obj\Debug\net6.0\ConfigurationFileJson.genruntimeconfig.cache
+C:\Users\admin\source\repos\DECommerce\ConfigurationFileJson\obj\Debug\net6.0\ref\ConfigurationFileJson.dll

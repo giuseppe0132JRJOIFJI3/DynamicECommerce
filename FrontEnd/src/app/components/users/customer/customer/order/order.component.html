@@ -1,0 +1,101 @@
+<div class="container mb-4 main-container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="profile-card-4 z-depth-3">
+         <div class="card">
+           <div class="card-body text-center bg-primary rounded-top">
+            <div class="user-box">
+              <img src="data:image/png;base64,{{user?.field2}}" alt="user avatar">
+            </div>
+           <h5 class="mb-1 text-white">{{user?.name }}</h5>
+           <h6 class="text-light">{{user?.surname }}</h6>
+          </div>
+          <div class="wizard">
+           <nav class="list-group list-group-flush">
+
+               <a class="list-group-item " href="#" routerLink="/catalog">
+                 <div class="d-flex justify-content-between align-items-center">
+                     <div><i class="fa fa-shopping-bag mr-1 text-muted"></i>
+                         <div class="d-inline-block font-weight-medium text-uppercase">Go to shop</div>
+                     </div>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                       <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
+                     </svg>
+                 </div>
+             </a>
+
+             <a class="list-group-item " href="#" routerLink="/checkout">
+               <div class="d-flex justify-content-between align-items-center">
+                   <div><i class="fa fa-shopping-bag mr-1 text-muted"></i>
+                       <div class="d-inline-block font-weight-medium text-uppercase">Go to cart</div>
+                   </div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                   </svg>
+               </div>
+           </a>
+
+               <a class="list-group-item " href="#" routerLink="yourOrder">
+                 <div class="d-flex justify-content-between align-items-center">
+                     <div><i class="fa fa-shopping-bag mr-1 text-muted"></i>
+                         <div class="d-inline-block font-weight-medium text-uppercase">Go to your orders list</div>
+                     </div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16">
+                       <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+                       <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+                     </svg>
+                 </div>
+             </a>
+
+             <a class="list-group-item " href="#"
+             (click)="navbarComponent.onLogout()">
+               <div class="d-flex justify-content-between align-items-center">
+                   <div><i class="fa fa-shopping-bag mr-1 text-muted"></i>
+                       <div class="d-inline-block font-weight-medium text-uppercase">Logout</div>
+                   </div>
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                     <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                   </svg>
+               </div>
+           </a>
+           </nav>
+       </div>
+     </div>
+   </div>
+</div>
+        <!-- Orders Table-->
+        <div class="col-lg-8 pb-5">
+            <div class="d-flex justify-content-end pb-3">
+                <div class="form-inline">
+                    <label class="text-muted mr-3" for="order-sort">Sort Orders</label>
+                    <select class="form-control" id="order-sort">
+                        <option>All</option>
+                        <option>Delivered</option>
+                        <option>In Progress</option>
+                        <option>Delayed</option>
+                        <option>Canceled</option>
+                    </select>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead>
+                        <tr>
+                            <th>Order #</th>
+                            <th>Contact</th>
+                            <th>Shipping Details</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let order of orders">
+                            <td><a class="navi-link" href="#order-details" data-toggle="modal">{{order.orderID}}</a></td>
+                            <td>{{order.field1 }}</td>
+                            <td>{{order.field2}} / {{order.field3}} / {{order.field3}} / {{order.field4}}</td>
+                            <td><span>€ {{order.totalPrice}}</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

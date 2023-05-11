@@ -1,0 +1,94 @@
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-lg-9 col-xl-7">
+        <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+          <!-- retun arrow -->
+          <div class="pt-5 " style="padding-left: 7% ;" routerLink="/admin">
+            <svg type="button" xmlns="http://www.w3.org/2000/svg"   width="23" height="23" fill="currentColor" class="omh-svg" style="color :rgb(35, 13, 112);" viewBox="0 0 16 16">
+              <path class="omh-path" fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+            </svg>
+          </div>
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Product Creation Form</h3>
+            <form [formGroup]="addProductForm">
+              <div>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <input type="text" id="field1" placeholder="Product name" class="form-control form-control-lg"
+                    [(ngModel)]="product.field1"
+                    formControlName="field1FormControl"  />
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <input type="text" id="unitPrice" placeholder="Product price" class="form-control form-control-lg"
+                    [(ngModel)]="product.unitPrice"
+                    formControlName="unitPriceFormControl"/>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 d-flex align-items-center">
+                  <div class="form-outline datepicker w-100">
+                    <input type="file" accept="image/*"  placeholder="Product image" id="image" class="form-control form-control-lg"
+                    [(ngModel)]="product.image"
+                    [ngModelOptions]="{standalone: true}"
+                    (change)="onFileSelected($event)"/>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-4 d-flex align-items-center row">
+                  <div class="form-outline datepicker w-100">
+                    <select class="form-select form-select-lg mb-1" aria-label=".form-select-lg example" placeholder="Product category"
+                            [(ngModel)]="selectedCategory"
+                            formControlName="selectedCategoryFormControl"
+                            (change)="onSelectCategory($event)">
+                      <option *ngFor="let category of categoryList$ | async" [value]="category.productCategoriesID">{{ category.field2 }}</option>
+                    </select>
+                    <label class="form-label" >Product Category</label>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-6 mb-4">
+                <div class="form-outline">
+                  <textarea id="field2" placeholder="Product description" [(ngModel)]="product.field2" formControlName="field2FormControl" class="form-control form-control-lg"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-2">
+              <button class="btn"
+              (click)="onAddProduct()"
+              [disabled]="addProductForm.invalid">
+              Aggiungi Prodotto</button>
+            </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div *ngIf="showModal" class="modal" class="modal fade show" role="dialog" style="display: block; background-color: rgba(0, 0, 0, 0.5);">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <h4>Prodotto Aggiunto con Successo!</h4>
+        <button type="button" class="btn btn-secondary" (click)="closePopup()">Chiudi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
