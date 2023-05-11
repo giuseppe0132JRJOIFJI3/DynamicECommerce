@@ -16,8 +16,8 @@ namespace DECommerce.Models
 
 
         //--------------------------------------------------Relazioni Tra Tabelle----------------------------------------------------------------------
-        public Users Users { get; set; }//relazione con tabella User 1 a 1 
+        public Users? Users { get; set; }//relazione con tabella User 1 a 1 
 
-        public Roles Roles { get; set; }//relazione con tabella role
+        public Roles? Roles { get; set; }//relazione con tabella role
     }
 }

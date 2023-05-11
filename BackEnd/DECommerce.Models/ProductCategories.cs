@@ -17,6 +17,6 @@ namespace DECommerce.Models
 
 
         //--------------------------------------------------
-        public List<Products> Products { get; set; }//relazione con tabella Products
+        public List<Products>? Products { get; set; }//relazione con tabella Products
     }
 }

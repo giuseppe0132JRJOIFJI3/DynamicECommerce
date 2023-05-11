@@ -21,7 +21,7 @@ namespace DECommerce.Models
 
 
         //--------------------------------------------------Relazioni Tra Tabelle----------------------------------------------------------------------
-        public ProductCategories ProductCategories { get; set; }
-        public List<OrderDetails> OrderDetails { get; set; }  
+        public ProductCategories? ProductCategories { get; set; }
+        public List<OrderDetails>? OrderDetails { get; set; }  
     }
 }

@@ -8,8 +8,8 @@ namespace DECommerceConfigurationsModels
 {
     public class Fields
     {
-        public string Name;
+        public string? Name;
         public bool IsVisible { get; set; }
-        public string Text { get; set; }
+        public string? Text { get; set; }
     }
 }

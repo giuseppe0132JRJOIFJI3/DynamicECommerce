@@ -23,13 +23,13 @@ namespace DynamicECommerce.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] Users user)
+        public Task<IActionResult> Login([FromBody] Users user)
         {
-            var storedUser = _idecommerceRepository.GetUserByUsername(user.Username);
+            var storedUser =  _idecommerceRepository.GetUserByUsername(user.Username);
 
             if (storedUser == null || storedUser.Password != user.Password)
             {
-                return Unauthorized();
+                return Task.FromResult<IActionResult>(Unauthorized());
             }
 
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -42,7 +42,7 @@ namespace DynamicECommerce.Controllers
                 if (userRole == null)
                 {
                     // Gestire il caso in cui non esiste un UserRole per l'utente
-                    return BadRequest("UserRole non trovato per l'utente");
+                    return Task.FromResult<IActionResult>(BadRequest("UserRole non trovato per l'utente"));
                 }
 
                 var claims = new[]
@@ -63,12 +63,12 @@ namespace DynamicECommerce.Controllers
 
                 var token = tokenHandler.CreateToken(tokenDescriptor);
 
-                return Ok(new { token = tokenHandler.WriteToken(token), roleId = userRole.RoleID, userID = storedUser.UserID });
+                return Task.FromResult<IActionResult>(Ok(new { token = tokenHandler.WriteToken(token), roleId = userRole.RoleID, userID = storedUser.UserID }));
             }
             else
             {
                 // Gestire il caso in cui storedUser è null
-                return BadRequest("Utente non trovato");
+                return Task.FromResult<IActionResult>(BadRequest("Utente non trovato"));
             }
         }
     }

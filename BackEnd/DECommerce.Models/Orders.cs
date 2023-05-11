@@ -24,9 +24,9 @@ namespace DECommerce.Models
         public int? Field8 { get; set; }
 
         //--------------------------------------------------Relazioni Tra Tabelle----------------------------------------------------------------------
-        public Users Users { get; set; } //relazione con tabella Users
+        public Users? Users { get; set; } //relazione con tabella Users
 
-        public List<OrderDetails> OrderDetails { get; set; }
+        public List<OrderDetails>? OrderDetails { get; set; }
 
     }
 }   

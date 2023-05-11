@@ -18,8 +18,8 @@ namespace DECommerce.Models
         public string? Field2 { get; set; }
 
         //--------------------------------------------------Relazioni Tra Tabelle----------------------------------------------------------------------
-        public Orders Orders { get; set; } //relazione con tabella Orders
-        public Products Products { get; set; }
+        public Orders? Orders { get; set; } //relazione con tabella Orders
+        public Products? Products { get; set; }
 
     }
 }

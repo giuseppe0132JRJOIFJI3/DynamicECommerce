@@ -16,6 +16,6 @@ namespace DECommerce.Models
 
         //--------------------------------------------------Relazioni Tra Tabelle----------------------------------------------------------------------
 
-        public List<UserRole> UserRole { get; set; }//relazione con tabella UserRole
+        public List<UserRole>? UserRole { get; set; }//relazione con tabella UserRole
     }
 }
